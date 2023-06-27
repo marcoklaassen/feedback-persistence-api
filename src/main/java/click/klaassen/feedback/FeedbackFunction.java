@@ -16,7 +16,7 @@ public class FeedbackFunction {
     @Transactional
     @Funq
     public void feedback(Feedback feedback) {
-        log.info("Feedback persistence got rating: {}", feedback.getRating());
+        log.info("Feedback persistence got rating from coding festival: {}", feedback.getRating());
         em.persist(Feedback.builder().rating(feedback.getRating()).build());
     }
 }
