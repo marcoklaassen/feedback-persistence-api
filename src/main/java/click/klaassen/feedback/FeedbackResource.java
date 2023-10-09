@@ -1,7 +1,5 @@
 package click.klaassen.feedback;
 
-import lombok.extern.slf4j.Slf4j;
-
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -10,7 +8,6 @@ import javax.ws.rs.Path;
 
 @Path("/debug")
 @ApplicationScoped
-@Slf4j
 public class FeedbackResource {
 
     @Inject
